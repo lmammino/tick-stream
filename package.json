@@ -1,11 +1,11 @@
 {
   "name": "tick-stream",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple transform stream that can log a tick every time data is pushed through a pipe",
-  "engines" : {
-    "node" : ">=6.0.0"
+  "engines": {
+    "node": ">=6.0.0"
   },
-  "engineStrict" : true,
+  "engineStrict": true,
   "main": "index.js",
   "files": [
     "index.js"
@@ -24,13 +24,15 @@
     "Utility",
     "Debug",
     "Progress",
-    "Tick"
+    "Tick",
+    "Ticker"
   ],
   "author": {
     "name": "Luciano Mammino",
     "url": "https://loige.co"
   },
   "license": "MIT",
+  "repository": "https://github.com/lmammino/tick-stream",
   "bugs": {
     "url": "https://github.com/lmammino/tick-stream/issues"
   },
