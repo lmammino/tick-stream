@@ -1,0 +1,51 @@
+{
+  "name": "tick-stream",
+  "version": "0.0.1",
+  "description": "A simple transform stream that can log a tick every time data is pushed through a pipe",
+  "engines" : {
+    "node" : ">=6.0.0"
+  },
+  "engineStrict" : true,
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test:lint": "eslint --ignore-pattern='node_modules/' --ignore-pattern='coverage/' --ignore-pattern='docs/' .",
+    "test:unit": "jest --verbose --coverage --runInBand",
+    "test:unit:watch": "jest --verbose --coverage --runInBand --watch",
+    "test": "npm run test:lint && npm run test:unit",
+    "release:tag": "git tag $npm_package_version && git push --tags",
+    "coverage:submit": "codecov"
+  },
+  "keywords": [
+    "Stream",
+    "Streams",
+    "Utility",
+    "Debug",
+    "Progress",
+    "Tick"
+  ],
+  "author": {
+    "name": "Luciano Mammino",
+    "url": "https://loige.co"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmammino/tick-stream/issues"
+  },
+  "homepage": "https://github.com/lmammino/tick-stream#readme",
+  "dependencies": {
+    "readable-stream": "^2.3.4"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.2"
+  }
+}
